@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALUH AI STUDIO GENERATOR</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0b1020;
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 35px 15px;
+      background: linear-gradient(135deg, #111936, #18275c);
+    }
+
+    header h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #cbd5e1;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 25px 15px;
+    }
+
+    .card {
+      background: #151d35;
+      border-radius: 18px;
+      padding: 22px;
+      margin-bottom: 18px;
+      border: 1px solid #293657;
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #cbd5e1;
+      line-height: 1.6;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 12px;
+      background: #2563eb;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    .status {
+      text-align: center;
+      margin-top: 20px;
+      color: #93c5fd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🎬 ALUH AI STUDIO GENERATOR</h1>
+    <p>Audio • Video • Photo Editing</p>
+  </header>
+
+  <main class="container">
+
+    <div class="card">
+      <h2>🎵 AI Music Generator</h2>
+      <p>
+        Tengenza mawimbo na audio kwa kutumia teknolojia ya AI.
+      </p>
+      <button onclick="showMessage('AI Music Generator')">
+        Anza Kutengeneza Music
+      </button>
+    </div>
+
+    <div class="card">
+      <h2>🎬 AI Video Generator</h2>
+      <p>
+        Tengenza video za AI kutoka kwenye picha na mawazo yako.
+      </p>
+      <button onclick="showMessage('AI Video Generator')">
+        Anza Kutengeneza Video
+      </button>
+    </div>
+
+    <div class="card">
+      <h2>🖼️ Photo Editing</h2>
+      <p>
+        Hariri, boresha na safisha picha zako kwa kutumia AI.
+      </p>
+      <button onclick="showMessage('Photo Editing')">
+        Anza Kuhariri Picha
+      </button>
+    </div>
+
+    <div class="card">
+      <h2>📚 Jifunze AI</h2>
+      <p>
+        Jifunze hatua kwa hatua namna ya kutengeneza music, video na picha kwa AI.
+      </p>
+      <button onclick="showMessage('AI Learning')">
+        Anza Kujifunza
+      </button>
+    </div>
+
+    <div class="status" id="status"></div>
+
+  </main>
+
+  <footer>
+    © 2026 ALUH AI STUDIO GENERATOR
+  </footer>
+
+  <script>
+    function showMessage(service) {
+      document.getElementById("status").innerText =
+        service + " imechaguliwa. Mfumo huu utaunganishwa hivi karibuni.";
+    }
+  </script>
+
+</body>
+</html>
